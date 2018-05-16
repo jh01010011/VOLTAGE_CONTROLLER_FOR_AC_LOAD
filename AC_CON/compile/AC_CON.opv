@@ -1,0 +1,1 @@
+ -erf "C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\compile\AC_CON.erf" -work AC_CON -lc C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/library.cfg -fl C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/projlib.cfg -o C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/compile -l "AC_CON"   -O2 -l COOLRUNNERII

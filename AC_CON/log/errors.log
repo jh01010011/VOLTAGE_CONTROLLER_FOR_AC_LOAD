@@ -1,0 +1,16 @@
+# Error: VCP2000 TestBench/TOP_LEVEL_TB.v : (46, 9): Syntax error. Unexpected token: .. Expected tokens: ',' , ')'.
+# Error: VCP2000 TestBench/TOP_LEVEL_TB.v : (46, 28): Syntax error. Unexpected token: ). Expected tokens: ',' , ';'.
+# Error: VCP5103 HDL_Source/Verilog/TOP_LEVEL.v : (43, 22): Undeclared identifier: COUTNT_MD.
+# Error: VCP2000 HDL_Source/Verilog/TOP_LEVEL.v : (24, 35): Syntax error. Unexpected token: ;. Expected tokens: ',' , ')'.
+# Error: VCP2000 HDL_Source/Verilog/TOP_LEVEL.v : (29, 4): Syntax error. Unexpected token: FSM[_IDENTIFIER]. Expected tokens: 'function' , 'task' , 'timeprecision' , 'timeunit' , 'const' ... .
+# Error: VCP5103 HDL_Source/Verilog/DATA_PATH.v : (72, 13): Undeclared identifier: R_POS.
+# Error: VCP5103 HDL_Source/Verilog/DATA_PATH.v : (38, 21): Undeclared identifier: R_POS.
+# Error: VCP5103 HDL_Source/Verilog/DATA_PATH.v : (39, 29): Undeclared identifier: R_POS.
+# Error: VCP5103 HDL_Source/Verilog/DATA_PATH.v : (40, 28): Undeclared identifier: R_POS.
+# Error: VCP5103 HDL_Source/Verilog/DATA_PATH.v : (40, 35): Undeclared identifier: R_POS.
+# Error: VCP5103 HDL_Source/Verilog/DATA_PATH.v : (41, 28): Undeclared identifier: R_POS.
+# Error: VCP5103 HDL_Source/Verilog/DATA_PATH.v : (41, 35): Undeclared identifier: R_POS.
+# Error: VCP2000 HDL_Source/Verilog/DATA_PATH.v : (44, 35): Syntax error. Unexpected token: ). Expected tokens: ''' , '(' , '{' , 'integer'' , 'real'' ... .
+# Error: VCP5103 HDL_Source/Verilog/DATA_PATH.v : (73, 13): Undeclared identifier: R_POS.
+# Error: VCP2000 HDL_Source/Verilog/DATA_PATH.v : (44, 35): Syntax error. Unexpected token: ). Expected tokens: ''' , '(' , '{' , 'integer'' , 'real'' ... .
+# Error: VCP2675 HDL_Source/Verilog/DATA_PATH.v : (38, 1): Cannot write to a variable 'R_POS' that is also driven by an always_comb/always_latch/always_ff procedural block.

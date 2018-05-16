@@ -1,0 +1,12 @@
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\AC_CON\src\HDL_Source\Verilog\FSM.v|]
+TemplateId=2
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\AC_CON\src\HDL_Source\Verilog\DATA_PATH.v|]
+TemplateId=2
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\AC_CON\src\HDL_Source\Verilog\TOP_LEVEL.v|]
+TemplateId=2
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\AC_CON\src\HDL_Source\Verilog\PRNG.v|]
+TemplateId=2
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\AC_CON\src\TestBench\PRNG_TB.v|]
+TemplateId=2
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\AC_CON\src\TestBench\TOP_LEVEL_TB.v|]
+TemplateId=2

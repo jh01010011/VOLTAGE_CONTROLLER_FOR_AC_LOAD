@@ -1,0 +1,1 @@
+ -u "C:\Aldec\Active-HDL 9.3\bin/systf.dll" "C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\src\HDL_Source\Verilog\TOP_LEVEL.v"  -cs  -g 5  -r -li "C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\compile\AC_CON.epr" -p "C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\AC_CON"  -b "COOLRUNNERII" 

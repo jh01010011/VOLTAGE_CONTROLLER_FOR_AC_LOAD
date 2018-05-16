@@ -1,0 +1,2364 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/PRNG.v $dsn/src/HDL_Source/Verilog/FSM.v $dsn/src/HDL_Source/Verilog/DATA_PATH.v $dsn/src/HDL_Source/Verilog/TOP_LEVEL.v $dsn/src/TestBench/PRNG_TB.v $dsn/src/TestBench/TOP_LEVEL_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 TestBench/PRNG_TB.v : (21, 26): Implicit net declaration, symbol SYS_CLK2 has not been declared in module PRNG_tb.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (17, 1): Undefined port SCLR in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (18, 1): Undefined port LOAD in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (19, 1): Undefined port EN in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (21, 1): Undefined port SYS_CLK in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (22, 1): Undefined port PRN in module PRNG.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: PRNG_tb TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 5 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\TestBench\TOP_LEVEL_TB.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\HDL_Source\Verilog\TOP_LEVEL.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+asim +access +r -advdataflow TOP_LEVEL_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (27): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (27): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5291 kB (elbread=1023 elab2=4122 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\src\wave.asdb
+#  12:59 PM, Monday, August 29, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: TOP_LEVEL_tb (TOP_LEVEL_tb)
+# add wave -noreg {/TOP_LEVEL_tb/SEED}
+# add wave -noreg {/TOP_LEVEL_tb/UI}
+# add wave -noreg {/TOP_LEVEL_tb/DAC}
+# add wave -noreg {/TOP_LEVEL_tb/SYS_CLK}
+# add wave -noreg {/TOP_LEVEL_tb/SYS_CLK2}
+# add wave -noreg {/TOP_LEVEL_tb/A_RESET}
+# add wave -noreg {/TOP_LEVEL_tb/PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_P}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_N}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON}
+# add wave -noreg {/TOP_LEVEL_tb/ZC}
+# add wave -noreg {/TOP_LEVEL_tb/UI_LT_EQ_PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_P}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_N}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_DRIVE}
+# add wave -noreg {/TOP_LEVEL_tb/CLOCK_PERIOD}
+# add wave -noreg {/TOP_LEVEL_tb/RUN_TIME}
+# 17 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TOP_LEVEL_TB.v (101): $finish called.
+# KERNEL: Time: 16 us,  Iteration: 0,  Instance: /TOP_LEVEL_tb,  Process: @INITIAL#SYSTEM_RUN_TIME@.
+# KERNEL: stopped at time: 16 us
+endsim
+#  Simulation has been stopped
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\TestBench\TOP_LEVEL_TB.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\HDL_Source\Verilog\TOP_LEVEL.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim +access +r -advdataflow TOP_LEVEL_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (27): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (27): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5291 kB (elbread=1023 elab2=4122 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\src\wave.asdb
+#  1:06 PM, Monday, August 29, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: TOP_LEVEL_tb (TOP_LEVEL_tb)
+# add wave -noreg {/TOP_LEVEL_tb/SEED}
+# add wave -noreg {/TOP_LEVEL_tb/UI}
+# add wave -noreg {/TOP_LEVEL_tb/DAC}
+# add wave -noreg {/TOP_LEVEL_tb/SYS_CLK}
+# add wave -noreg {/TOP_LEVEL_tb/SYS_CLK2}
+# add wave -noreg {/TOP_LEVEL_tb/A_RESET}
+# add wave -noreg {/TOP_LEVEL_tb/PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_P}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_N}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON}
+# add wave -noreg {/TOP_LEVEL_tb/ZC}
+# add wave -noreg {/TOP_LEVEL_tb/UI_LT_EQ_PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_P}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_N}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_DRIVE}
+# add wave -noreg {/TOP_LEVEL_tb/CLOCK_PERIOD}
+# add wave -noreg {/TOP_LEVEL_tb/RUN_TIME}
+# 17 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TOP_LEVEL_TB.v (101): $finish called.
+# KERNEL: Time: 16 us,  Iteration: 0,  Instance: /TOP_LEVEL_tb,  Process: @INITIAL#SYSTEM_RUN_TIME@.
+# KERNEL: stopped at time: 16 us
+endsim
+#  Simulation has been stopped
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/PRNG.v $dsn/src/HDL_Source/Verilog/FSM.v $dsn/src/HDL_Source/Verilog/DATA_PATH.v $dsn/src/HDL_Source/Verilog/TOP_LEVEL.v $dsn/src/TestBench/PRNG_TB.v $dsn/src/TestBench/TOP_LEVEL_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 TestBench/PRNG_TB.v : (21, 26): Implicit net declaration, symbol SYS_CLK2 has not been declared in module PRNG_tb.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (17, 1): Undefined port SCLR in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (18, 1): Undefined port LOAD in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (19, 1): Undefined port EN in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (22, 1): Undefined port PRN in module PRNG.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: PRNG_tb TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 4 Warnings  Analysis time: 1[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/TestBench/TOP_LEVEL_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\TestBench\TOP_LEVEL_TB.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\HDL_Source\Verilog\TOP_LEVEL.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim +access +r -advdataflow TOP_LEVEL_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (27): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (27): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5290 kB (elbread=1023 elab2=4120 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\src\wave.asdb
+#  2:55 PM, Monday, August 29, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: TOP_LEVEL_tb (TOP_LEVEL_tb)
+# Waveform file 'untitled.awc' connected to 'C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SYS_CLK2 not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# add wave -noreg {/TOP_LEVEL_tb/SEED}
+# add wave -noreg {/TOP_LEVEL_tb/UI}
+# add wave -noreg {/TOP_LEVEL_tb/DAC}
+# add wave -noreg {/TOP_LEVEL_tb/SYS_CLK}
+# add wave -noreg {/TOP_LEVEL_tb/A_RESET}
+# add wave -noreg {/TOP_LEVEL_tb/PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_P}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_N}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON}
+# add wave -noreg {/TOP_LEVEL_tb/ZC}
+# add wave -noreg {/TOP_LEVEL_tb/UI_LT_EQ_PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_P}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_N}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_DRIVE}
+# add wave -noreg {/TOP_LEVEL_tb/CLOCK_PERIOD}
+# add wave -noreg {/TOP_LEVEL_tb/RUN_TIME}
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/SEED' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/UI' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/DAC' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/SYS_CLK' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/A_RESET' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/PRNG' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/M_ON_P' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/M_ON_N' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/M_ON' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/ZC' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/UI_LT_EQ_PRNG' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/MOTOR_D_P' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/MOTOR_D_N' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/MOTOR_DRIVE' has already been traced.
+# 2 signal(s) traced.
+run
+# RUNTIME: Info: RUNTIME_0068 TOP_LEVEL_TB.v (90): $finish called.
+# KERNEL: Time: 16 us,  Iteration: 0,  Instance: /TOP_LEVEL_tb,  Process: @INITIAL#SYSTEM_RUN_TIME@.
+# KERNEL: stopped at time: 16 us
+endsim
+#  Simulation has been stopped
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/TestBench/TOP_LEVEL_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Error: VCP2000 TestBench/TOP_LEVEL_TB.v : (46, 9): Syntax error. Unexpected token: .. Expected tokens: ',' , ')'.
+# Error: VCP2000 TestBench/TOP_LEVEL_TB.v : (46, 28): Syntax error. Unexpected token: ). Expected tokens: ',' , ';'.
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/TestBench/TOP_LEVEL_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Warning: VCP2590 TestBench/TOP_LEVEL_TB.v : (45, 1): Undefined port COUNT_ZERO in module TOP_LEVEL.
+# Warning: VCP2590 TestBench/TOP_LEVEL_TB.v : (46, 1): Undefined port COUNT_MD in module TOP_LEVEL.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 2 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/TOP_LEVEL.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP5103 HDL_Source/Verilog/TOP_LEVEL.v : (43, 22): Undeclared identifier: COUTNT_MD.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 1[s].
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/TOP_LEVEL.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/TestBench/TOP_LEVEL_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\TestBench\TOP_LEVEL_TB.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\HDL_Source\Verilog\TOP_LEVEL.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim +access +r -advdataflow TOP_LEVEL_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (29): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (29): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5291 kB (elbread=1023 elab2=4121 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\src\wave.asdb
+#  3:04 PM, Monday, August 29, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: TOP_LEVEL_tb (TOP_LEVEL_tb)
+# Waveform file 'untitled.awc' connected to 'C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/SEED' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/UI' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/DAC' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/SYS_CLK' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/A_RESET' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/PRNG' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/M_ON_P' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/M_ON_N' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/M_ON' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/ZC' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/UI_LT_EQ_PRNG' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/MOTOR_D_P' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/MOTOR_D_N' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/MOTOR_DRIVE' has already been traced.
+endsim
+#  Simulation has been stopped
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/TOP_LEVEL.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/PRNG.v $dsn/src/HDL_Source/Verilog/FSM.v $dsn/src/HDL_Source/Verilog/DATA_PATH.v $dsn/src/HDL_Source/Verilog/TOP_LEVEL.v $dsn/src/TestBench/PRNG_TB.v $dsn/src/TestBench/TOP_LEVEL_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 TestBench/PRNG_TB.v : (21, 26): Implicit net declaration, symbol SYS_CLK2 has not been declared in module PRNG_tb.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (17, 1): Undefined port SCLR in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (18, 1): Undefined port LOAD in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (19, 1): Undefined port EN in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (22, 1): Undefined port PRN in module PRNG.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: PRNG_tb TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 4 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/TestBench/TOP_LEVEL_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\TestBench\TOP_LEVEL_TB.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\HDL_Source\Verilog\TOP_LEVEL.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim +access +r -advdataflow TOP_LEVEL_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (29): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (29): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5291 kB (elbread=1023 elab2=4122 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\src\wave.asdb
+#  3:07 PM, Monday, August 29, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: TOP_LEVEL_tb (TOP_LEVEL_tb)
+# add wave -noreg {/TOP_LEVEL_tb/SEED}
+# add wave -noreg {/TOP_LEVEL_tb/UI}
+# add wave -noreg {/TOP_LEVEL_tb/DAC}
+# add wave -noreg {/TOP_LEVEL_tb/SYS_CLK}
+# add wave -noreg {/TOP_LEVEL_tb/A_RESET}
+# add wave -noreg {/TOP_LEVEL_tb/PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_P}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_N}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON}
+# add wave -noreg {/TOP_LEVEL_tb/ZC}
+# add wave -noreg {/TOP_LEVEL_tb/UI_LT_EQ_PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_P}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_N}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_DRIVE}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_ZERO}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_MD}
+# add wave -noreg {/TOP_LEVEL_tb/CLOCK_PERIOD}
+# add wave -noreg {/TOP_LEVEL_tb/RUN_TIME}
+# 18 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TOP_LEVEL_TB.v (94): $finish called.
+# KERNEL: Time: 16 us,  Iteration: 0,  Instance: /TOP_LEVEL_tb,  Process: @INITIAL#SYSTEM_RUN_TIME@.
+# KERNEL: stopped at time: 16 us
+endsim
+#  Simulation has been stopped
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/TOP_LEVEL.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 HDL_Source/Verilog/TOP_LEVEL.v : (24, 35): Syntax error. Unexpected token: ;. Expected tokens: ',' , ')'.
+# Error: VCP2000 HDL_Source/Verilog/TOP_LEVEL.v : (29, 4): Syntax error. Unexpected token: FSM[_IDENTIFIER]. Expected tokens: 'function' , 'task' , 'timeprecision' , 'timeunit' , 'const' ... .
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/TOP_LEVEL.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/TestBench/TOP_LEVEL_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\TestBench\TOP_LEVEL_TB.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\HDL_Source\Verilog\TOP_LEVEL.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim +access +r -advdataflow TOP_LEVEL_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (30): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (30): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5292 kB (elbread=1023 elab2=4122 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\src\wave.asdb
+#  3:15 PM, Monday, August 29, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: TOP_LEVEL_tb (TOP_LEVEL_tb)
+# add wave -noreg {/TOP_LEVEL_tb/SEED}
+# add wave -noreg {/TOP_LEVEL_tb/UI}
+# add wave -noreg {/TOP_LEVEL_tb/DAC}
+# add wave -noreg {/TOP_LEVEL_tb/SYS_CLK}
+# add wave -noreg {/TOP_LEVEL_tb/A_RESET}
+# add wave -noreg {/TOP_LEVEL_tb/PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_P}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_N}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON}
+# add wave -noreg {/TOP_LEVEL_tb/ZC}
+# add wave -noreg {/TOP_LEVEL_tb/UI_LT_EQ_PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_P}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_N}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_DRIVE}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_ZERO}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_MD}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_PRNG_LOGIC}
+# add wave -noreg {/TOP_LEVEL_tb/CLOCK_PERIOD}
+# add wave -noreg {/TOP_LEVEL_tb/RUN_TIME}
+# 19 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TOP_LEVEL_TB.v (96): $finish called.
+# KERNEL: Time: 16 us,  Iteration: 0,  Instance: /TOP_LEVEL_tb,  Process: @INITIAL#SYSTEM_RUN_TIME@.
+# KERNEL: stopped at time: 16 us
+endsim
+#  Simulation has been stopped
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/DATA_PATH.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\TestBench\TOP_LEVEL_TB.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\HDL_Source\Verilog\TOP_LEVEL.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim +access +r -advdataflow TOP_LEVEL_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (30): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (30): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5292 kB (elbread=1023 elab2=4122 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\src\wave.asdb
+#  3:22 PM, Monday, August 29, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: TOP_LEVEL_tb (TOP_LEVEL_tb)
+# add wave -noreg {/TOP_LEVEL_tb/SEED}
+# add wave -noreg {/TOP_LEVEL_tb/UI}
+# add wave -noreg {/TOP_LEVEL_tb/DAC}
+# add wave -noreg {/TOP_LEVEL_tb/SYS_CLK}
+# add wave -noreg {/TOP_LEVEL_tb/A_RESET}
+# add wave -noreg {/TOP_LEVEL_tb/PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_P}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_N}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON}
+# add wave -noreg {/TOP_LEVEL_tb/ZC}
+# add wave -noreg {/TOP_LEVEL_tb/UI_LT_EQ_PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_P}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_N}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_DRIVE}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_ZERO}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_MD}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_PRNG_LOGIC}
+# add wave -noreg {/TOP_LEVEL_tb/CLOCK_PERIOD}
+# add wave -noreg {/TOP_LEVEL_tb/RUN_TIME}
+# 19 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TOP_LEVEL_TB.v (96): $finish called.
+# KERNEL: Time: 16 us,  Iteration: 0,  Instance: /TOP_LEVEL_tb,  Process: @INITIAL#SYSTEM_RUN_TIME@.
+# KERNEL: stopped at time: 16 us
+endsim
+#  Simulation has been stopped
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/DATA_PATH.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/DATA_PATH.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/TestBench/TOP_LEVEL_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 TestBench/TOP_LEVEL_TB.v : (52, 19): Implicit net declaration, symbol POS has not been declared in module TOP_LEVEL_tb.
+# Warning: VCP2590 TestBench/TOP_LEVEL_TB.v : (51, 1): Undefined port R_NEG in module TOP_LEVEL.
+# Warning: VCP2590 TestBench/TOP_LEVEL_TB.v : (52, 1): Undefined port R_POS in module TOP_LEVEL.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 2 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/TestBench/TOP_LEVEL_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Warning: VCP2590 TestBench/TOP_LEVEL_TB.v : (51, 1): Undefined port R_NEG in module TOP_LEVEL.
+# Warning: VCP2590 TestBench/TOP_LEVEL_TB.v : (52, 1): Undefined port R_POS in module TOP_LEVEL.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 2 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/TOP_LEVEL.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/TestBench/TOP_LEVEL_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\TestBench\TOP_LEVEL_TB.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\HDL_Source\Verilog\TOP_LEVEL.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\TestBench\TOP_LEVEL_TB.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\HDL_Source\Verilog\TOP_LEVEL.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim +access +r -advdataflow TOP_LEVEL_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (32): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (32): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5293 kB (elbread=1023 elab2=4123 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\src\wave.asdb
+#  3:33 PM, Monday, August 29, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: TOP_LEVEL_tb (TOP_LEVEL_tb)
+# add wave -noreg {/TOP_LEVEL_tb/SEED}
+# add wave -noreg {/TOP_LEVEL_tb/UI}
+# add wave -noreg {/TOP_LEVEL_tb/DAC}
+# add wave -noreg {/TOP_LEVEL_tb/SYS_CLK}
+# add wave -noreg {/TOP_LEVEL_tb/A_RESET}
+# add wave -noreg {/TOP_LEVEL_tb/PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_P}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_N}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON}
+# add wave -noreg {/TOP_LEVEL_tb/ZC}
+# add wave -noreg {/TOP_LEVEL_tb/UI_LT_EQ_PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_P}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_N}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_DRIVE}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_ZERO}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_MD}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_PRNG_LOGIC}
+# add wave -noreg {/TOP_LEVEL_tb/R_NEG}
+# add wave -noreg {/TOP_LEVEL_tb/R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/CLOCK_PERIOD}
+# add wave -noreg {/TOP_LEVEL_tb/RUN_TIME}
+# 21 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TOP_LEVEL_TB.v (100): $finish called.
+# KERNEL: Time: 16 us,  Iteration: 0,  Instance: /TOP_LEVEL_tb,  Process: @INITIAL#SYSTEM_RUN_TIME@.
+# KERNEL: stopped at time: 16 us
+endsim
+#  Simulation has been stopped
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/FSM.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/FSM.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/TestBench/TOP_LEVEL_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\TestBench\TOP_LEVEL_TB.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\HDL_Source\Verilog\TOP_LEVEL.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+asim +access +r -advdataflow TOP_LEVEL_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (32): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (32): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5293 kB (elbread=1023 elab2=4123 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\src\wave.asdb
+#  3:38 PM, Monday, August 29, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: TOP_LEVEL_tb (TOP_LEVEL_tb)
+# add wave -noreg {/TOP_LEVEL_tb/SEED}
+# add wave -noreg {/TOP_LEVEL_tb/UI}
+# add wave -noreg {/TOP_LEVEL_tb/DAC}
+# add wave -noreg {/TOP_LEVEL_tb/SYS_CLK}
+# add wave -noreg {/TOP_LEVEL_tb/A_RESET}
+# add wave -noreg {/TOP_LEVEL_tb/PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_P}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_N}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON}
+# add wave -noreg {/TOP_LEVEL_tb/ZC}
+# add wave -noreg {/TOP_LEVEL_tb/UI_LT_EQ_PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_P}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_N}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_DRIVE}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_ZERO}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_MD}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_PRNG_LOGIC}
+# add wave -noreg {/TOP_LEVEL_tb/R_NEG}
+# add wave -noreg {/TOP_LEVEL_tb/R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/CLOCK_PERIOD}
+# add wave -noreg {/TOP_LEVEL_tb/RUN_TIME}
+# 21 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TOP_LEVEL_TB.v (100): $finish called.
+# KERNEL: Time: 16 us,  Iteration: 0,  Instance: /TOP_LEVEL_tb,  Process: @INITIAL#SYSTEM_RUN_TIME@.
+# KERNEL: stopped at time: 16 us
+run
+endsim
+#  Simulation has been stopped
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/DATA_PATH.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP5103 HDL_Source/Verilog/DATA_PATH.v : (72, 13): Undeclared identifier: R_POS.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/DATA_PATH.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/TOP_LEVEL.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/TestBench/TOP_LEVEL_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\TestBench\TOP_LEVEL_TB.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\HDL_Source\Verilog\TOP_LEVEL.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim +access +r -advdataflow TOP_LEVEL_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (32): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (32): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5293 kB (elbread=1023 elab2=4123 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\src\wave.asdb
+#  3:45 PM, Monday, August 29, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: TOP_LEVEL_tb (TOP_LEVEL_tb)
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+# add wave -noreg {/TOP_LEVEL_tb/SEED}
+# add wave -noreg {/TOP_LEVEL_tb/UI}
+# add wave -noreg {/TOP_LEVEL_tb/DAC}
+# add wave -noreg {/TOP_LEVEL_tb/SYS_CLK}
+# add wave -noreg {/TOP_LEVEL_tb/A_RESET}
+# add wave -noreg {/TOP_LEVEL_tb/PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_P}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_N}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON}
+# add wave -noreg {/TOP_LEVEL_tb/ZC}
+# add wave -noreg {/TOP_LEVEL_tb/UI_LT_EQ_PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_P}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_N}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_DRIVE}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_ZERO}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_MD}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_PRNG_LOGIC}
+# add wave -noreg {/TOP_LEVEL_tb/R_NEG}
+# add wave -noreg {/TOP_LEVEL_tb/R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/CLOCK_PERIOD}
+# add wave -noreg {/TOP_LEVEL_tb/RUN_TIME}
+# 21 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TOP_LEVEL_TB.v (100): $finish called.
+# KERNEL: Time: 16 us,  Iteration: 0,  Instance: /TOP_LEVEL_tb,  Process: @INITIAL#SYSTEM_RUN_TIME@.
+# KERNEL: stopped at time: 16 us
+endsim
+#  Simulation has been stopped
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/TOP_LEVEL.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/TestBench/TOP_LEVEL_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\TestBench\TOP_LEVEL_TB.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\HDL_Source\Verilog\TOP_LEVEL.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim +access +r -advdataflow TOP_LEVEL_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5293 kB (elbread=1023 elab2=4123 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\src\wave.asdb
+#  3:55 PM, Monday, August 29, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: TOP_LEVEL_tb (TOP_LEVEL_tb)
+# add wave -noreg {/TOP_LEVEL_tb/SEED}
+# add wave -noreg {/TOP_LEVEL_tb/UI}
+# add wave -noreg {/TOP_LEVEL_tb/DAC}
+# add wave -noreg {/TOP_LEVEL_tb/SYS_CLK}
+# add wave -noreg {/TOP_LEVEL_tb/A_RESET}
+# add wave -noreg {/TOP_LEVEL_tb/PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_P}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_N}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON}
+# add wave -noreg {/TOP_LEVEL_tb/ZC}
+# add wave -noreg {/TOP_LEVEL_tb/UI_LT_EQ_PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_P}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_N}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_DRIVE}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_ZERO}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_MD}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_PRNG_LOGIC}
+# add wave -noreg {/TOP_LEVEL_tb/R_NEG}
+# add wave -noreg {/TOP_LEVEL_tb/SCLR_R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/INC_R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/CLOCK_PERIOD}
+# add wave -noreg {/TOP_LEVEL_tb/RUN_TIME}
+# 23 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TOP_LEVEL_TB.v (104): $finish called.
+# KERNEL: Time: 16 us,  Iteration: 0,  Instance: /TOP_LEVEL_tb,  Process: @INITIAL#SYSTEM_RUN_TIME@.
+# KERNEL: stopped at time: 16 us
+endsim
+#  Simulation has been stopped
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/TOP_LEVEL.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/TestBench/TOP_LEVEL_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\TestBench\TOP_LEVEL_TB.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\HDL_Source\Verilog\TOP_LEVEL.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim +access +r -advdataflow TOP_LEVEL_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5293 kB (elbread=1023 elab2=4123 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\src\wave.asdb
+#  4:00 PM, Monday, August 29, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: TOP_LEVEL_tb (TOP_LEVEL_tb)
+# Waveform file 'untitled.awc' connected to 'C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb'.
+# add wave -noreg {/TOP_LEVEL_tb/SEED}
+# add wave -noreg {/TOP_LEVEL_tb/UI}
+# add wave -noreg {/TOP_LEVEL_tb/DAC}
+# add wave -noreg {/TOP_LEVEL_tb/SYS_CLK}
+# add wave -noreg {/TOP_LEVEL_tb/A_RESET}
+# add wave -noreg {/TOP_LEVEL_tb/PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_P}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_N}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON}
+# add wave -noreg {/TOP_LEVEL_tb/ZC}
+# add wave -noreg {/TOP_LEVEL_tb/UI_LT_EQ_PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_P}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_N}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_DRIVE}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_ZERO}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_MD}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_PRNG_LOGIC}
+# add wave -noreg {/TOP_LEVEL_tb/R_NEG}
+# add wave -noreg {/TOP_LEVEL_tb/SCLR_R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/INC_R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/CLOCK_PERIOD}
+# add wave -noreg {/TOP_LEVEL_tb/RUN_TIME}
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/SEED' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/UI' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/DAC' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/SYS_CLK' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/A_RESET' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/PRNG' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/M_ON_P' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/M_ON_N' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/M_ON' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/ZC' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/UI_LT_EQ_PRNG' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/MOTOR_D_P' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/MOTOR_D_N' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/MOTOR_DRIVE' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/COUNT_ZERO' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/COUNT_MD' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/COUNT_PRNG_LOGIC' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/R_NEG' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/SCLR_R_POS' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/INC_R_POS' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/R_POS' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/CLOCK_PERIOD' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/RUN_TIME' has already been traced.
+# 0 signal(s) traced.
+run
+# RUNTIME: Info: RUNTIME_0068 TOP_LEVEL_TB.v (104): $finish called.
+# KERNEL: Time: 16 us,  Iteration: 0,  Instance: /TOP_LEVEL_tb,  Process: @INITIAL#SYSTEM_RUN_TIME@.
+# KERNEL: stopped at time: 16 us
+endsim
+#  Simulation has been stopped
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/DATA_PATH.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP5103 HDL_Source/Verilog/DATA_PATH.v : (38, 21): Undeclared identifier: R_POS.
+# Error: VCP5103 HDL_Source/Verilog/DATA_PATH.v : (39, 29): Undeclared identifier: R_POS.
+# Error: VCP5103 HDL_Source/Verilog/DATA_PATH.v : (40, 28): Undeclared identifier: R_POS.
+# Error: VCP5103 HDL_Source/Verilog/DATA_PATH.v : (40, 35): Undeclared identifier: R_POS.
+# Error: VCP5103 HDL_Source/Verilog/DATA_PATH.v : (41, 28): Undeclared identifier: R_POS.
+# Error: VCP5103 HDL_Source/Verilog/DATA_PATH.v : (41, 35): Undeclared identifier: R_POS.
+# Error: VCP2000 HDL_Source/Verilog/DATA_PATH.v : (44, 35): Syntax error. Unexpected token: ). Expected tokens: ''' , '(' , '{' , 'integer'' , 'real'' ... .
+# Error: VCP5103 HDL_Source/Verilog/DATA_PATH.v : (73, 13): Undeclared identifier: R_POS.
+# Compile failure 8 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/DATA_PATH.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2000 HDL_Source/Verilog/DATA_PATH.v : (44, 35): Syntax error. Unexpected token: ). Expected tokens: ''' , '(' , '{' , 'integer'' , 'real'' ... .
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/DATA_PATH.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2675 HDL_Source/Verilog/DATA_PATH.v : (38, 1): Cannot write to a variable 'R_POS' that is also driven by an always_comb/always_latch/always_ff procedural block.
+# Info: VCP2674 HDL_Source/Verilog/DATA_PATH.v : (46, 1):  ... see 'R_POS' drive in always_comb/always_latch/always_ff procedural block.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/DATA_PATH.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/TOP_LEVEL.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/TestBench/TOP_LEVEL_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\TestBench\TOP_LEVEL_TB.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\HDL_Source\Verilog\TOP_LEVEL.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim +access +r -advdataflow TOP_LEVEL_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5294 kB (elbread=1023 elab2=4124 kernel=146 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\src\wave.asdb
+#  4:05 PM, Monday, August 29, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: TOP_LEVEL_tb (TOP_LEVEL_tb)
+# add wave -noreg {/TOP_LEVEL_tb/SEED}
+# add wave -noreg {/TOP_LEVEL_tb/UI}
+# add wave -noreg {/TOP_LEVEL_tb/DAC}
+# add wave -noreg {/TOP_LEVEL_tb/SYS_CLK}
+# add wave -noreg {/TOP_LEVEL_tb/A_RESET}
+# add wave -noreg {/TOP_LEVEL_tb/PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_P}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_N}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON}
+# add wave -noreg {/TOP_LEVEL_tb/ZC}
+# add wave -noreg {/TOP_LEVEL_tb/UI_LT_EQ_PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_P}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_N}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_DRIVE}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_ZERO}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_MD}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_PRNG_LOGIC}
+# add wave -noreg {/TOP_LEVEL_tb/R_NEG}
+# add wave -noreg {/TOP_LEVEL_tb/SCLR_R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/INC_R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/CLOCK_PERIOD}
+# add wave -noreg {/TOP_LEVEL_tb/RUN_TIME}
+# 23 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TOP_LEVEL_TB.v (104): $finish called.
+# KERNEL: Time: 16 us,  Iteration: 0,  Instance: /TOP_LEVEL_tb,  Process: @INITIAL#SYSTEM_RUN_TIME@.
+# KERNEL: stopped at time: 16 us
+endsim
+#  Simulation has been stopped
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/DATA_PATH.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/TestBench/TOP_LEVEL_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\TestBench\TOP_LEVEL_TB.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\HDL_Source\Verilog\TOP_LEVEL.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+asim +access +r -advdataflow TOP_LEVEL_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5294 kB (elbread=1023 elab2=4124 kernel=146 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\src\wave.asdb
+#  4:09 PM, Monday, August 29, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: TOP_LEVEL_tb (TOP_LEVEL_tb)
+# add wave -noreg {/TOP_LEVEL_tb/SEED}
+# add wave -noreg {/TOP_LEVEL_tb/UI}
+# add wave -noreg {/TOP_LEVEL_tb/DAC}
+# add wave -noreg {/TOP_LEVEL_tb/SYS_CLK}
+# add wave -noreg {/TOP_LEVEL_tb/A_RESET}
+# add wave -noreg {/TOP_LEVEL_tb/PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_P}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_N}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON}
+# add wave -noreg {/TOP_LEVEL_tb/ZC}
+# add wave -noreg {/TOP_LEVEL_tb/UI_LT_EQ_PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_P}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_N}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_DRIVE}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_ZERO}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_MD}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_PRNG_LOGIC}
+# add wave -noreg {/TOP_LEVEL_tb/R_NEG}
+# add wave -noreg {/TOP_LEVEL_tb/SCLR_R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/INC_R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/CLOCK_PERIOD}
+# add wave -noreg {/TOP_LEVEL_tb/RUN_TIME}
+# 23 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TOP_LEVEL_TB.v (104): $finish called.
+# KERNEL: Time: 16 us,  Iteration: 0,  Instance: /TOP_LEVEL_tb,  Process: @INITIAL#SYSTEM_RUN_TIME@.
+# KERNEL: stopped at time: 16 us
+endsim
+#  Simulation has been stopped
+alog -O2 -l COOLRUNNERII -sve   -work AC_CON $dsn/src/HDL_Source/Verilog/FSM.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\TestBench\TOP_LEVEL_TB.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\HDL_Source\Verilog\TOP_LEVEL.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim TOP_LEVEL_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5294 kB (elbread=1023 elab2=4124 kernel=146 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\src\wave.asdb
+#  6:55 PM, Monday, August 29, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: TOP_LEVEL_tb (TOP_LEVEL_tb)
+# Waveform file 'untitled.awc' connected to 'C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/SEED" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/UI" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/DAC" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/SYS_CLK" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/A_RESET" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/PRNG" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/M_ON_P" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/M_ON_N" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/M_ON" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/ZC" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/UI_LT_EQ_PRNG" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/MOTOR_D_P" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/MOTOR_D_N" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/MOTOR_DRIVE" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/COUNT_ZERO" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/COUNT_MD" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/COUNT_PRNG_LOGIC" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/R_NEG" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/SCLR_R_POS" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/INC_R_POS" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/R_POS" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/CLOCK_PERIOD" does not have read access. Use switch +access +r for this region.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SEED not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/UI not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/DAC not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SYS_CLK not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/A_RESET not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/PRNG not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/M_ON_P not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/M_ON_N not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/M_ON not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/ZC not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/UI_LT_EQ_PRNG not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/MOTOR_D_P not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/MOTOR_D_N not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/MOTOR_DRIVE not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/COUNT_ZERO not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/COUNT_MD not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/COUNT_PRNG_LOGIC not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/R_NEG not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SCLR_R_POS not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/INC_R_POS not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/R_POS not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/CLOCK_PERIOD not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+run
+# RUNTIME: Info: RUNTIME_0068 TOP_LEVEL_TB.v (104): $finish called.
+# KERNEL: Time: 16 us,  Iteration: 0,  Instance: /TOP_LEVEL_tb,  Process: @INITIAL#SYSTEM_RUN_TIME@.
+# KERNEL: stopped at time: 16 us
+endsim
+#  Simulation has been stopped
+# add wave -noreg {/TOP_LEVEL_tb/SEED}
+# add wave -noreg {/TOP_LEVEL_tb/UI}
+# add wave -noreg {/TOP_LEVEL_tb/DAC}
+# add wave -noreg {/TOP_LEVEL_tb/SYS_CLK}
+# add wave -noreg {/TOP_LEVEL_tb/A_RESET}
+# add wave -noreg {/TOP_LEVEL_tb/PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_P}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_N}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON}
+# add wave -noreg {/TOP_LEVEL_tb/ZC}
+# add wave -noreg {/TOP_LEVEL_tb/UI_LT_EQ_PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_P}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_N}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_DRIVE}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_ZERO}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_MD}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_PRNG_LOGIC}
+# add wave -noreg {/TOP_LEVEL_tb/R_NEG}
+# add wave -noreg {/TOP_LEVEL_tb/SCLR_R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/INC_R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/CLOCK_PERIOD}
+# add wave -noreg {/TOP_LEVEL_tb/RUN_TIME}
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SEED not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/UI not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/DAC not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SYS_CLK not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/A_RESET not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/PRNG not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/M_ON_P not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/M_ON_N not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/M_ON not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/ZC not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/UI_LT_EQ_PRNG not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/MOTOR_D_P not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/MOTOR_D_N not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/MOTOR_DRIVE not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/COUNT_ZERO not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/COUNT_MD not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/COUNT_PRNG_LOGIC not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/R_NEG not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SCLR_R_POS not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/INC_R_POS not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/R_POS not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/CLOCK_PERIOD not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# add wave -noreg {/TOP_LEVEL_tb/SEED}
+# add wave -noreg {/TOP_LEVEL_tb/UI}
+# add wave -noreg {/TOP_LEVEL_tb/DAC}
+# add wave -noreg {/TOP_LEVEL_tb/SYS_CLK}
+# add wave -noreg {/TOP_LEVEL_tb/A_RESET}
+# add wave -noreg {/TOP_LEVEL_tb/PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_P}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_N}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON}
+# add wave -noreg {/TOP_LEVEL_tb/ZC}
+# add wave -noreg {/TOP_LEVEL_tb/UI_LT_EQ_PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_P}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_N}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_DRIVE}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_ZERO}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_MD}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_PRNG_LOGIC}
+# add wave -noreg {/TOP_LEVEL_tb/R_NEG}
+# add wave -noreg {/TOP_LEVEL_tb/SCLR_R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/INC_R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/CLOCK_PERIOD}
+# add wave -noreg {/TOP_LEVEL_tb/RUN_TIME}
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SEED not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/UI not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/DAC not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SYS_CLK not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/A_RESET not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/PRNG not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/M_ON_P not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/M_ON_N not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/M_ON not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/ZC not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/UI_LT_EQ_PRNG not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/MOTOR_D_P not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/MOTOR_D_N not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/MOTOR_DRIVE not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/COUNT_ZERO not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/COUNT_MD not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/COUNT_PRNG_LOGIC not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/R_NEG not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SCLR_R_POS not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/INC_R_POS not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/R_POS not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/CLOCK_PERIOD not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\TestBench\TOP_LEVEL_TB.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module TOP_LEVEL found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Unit top modules: TOP_LEVEL_tb.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+vlcomp  -l COOLRUNNERII -work AC_CON "$dsn\src\HDL_Source\Verilog\TOP_LEVEL.v"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module FSM found in current working library.
+# Info: VCP2113 Module DATA_PATH found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Info: VCP2113 Module PRNG found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module PRNG_tb found in current working library.
+# Info: VCP2113 Module TOP_LEVEL_tb found in current working library.
+# $root top modules: PRNG_tb TOP_LEVEL_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim +access +r -advdataflow TOP_LEVEL_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5294 kB (elbread=1023 elab2=4124 kernel=146 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\blueb\OneDrive\STUDY\DSF_HOME\LAB10\AC_CON\src\wave.asdb
+#  6:56 PM, Monday, August 29, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: TOP_LEVEL_tb (TOP_LEVEL_tb)
+# add wave -noreg {/TOP_LEVEL_tb/SEED}
+# add wave -noreg {/TOP_LEVEL_tb/UI}
+# add wave -noreg {/TOP_LEVEL_tb/DAC}
+# add wave -noreg {/TOP_LEVEL_tb/SYS_CLK}
+# add wave -noreg {/TOP_LEVEL_tb/A_RESET}
+# add wave -noreg {/TOP_LEVEL_tb/PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_P}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON_N}
+# add wave -noreg {/TOP_LEVEL_tb/M_ON}
+# add wave -noreg {/TOP_LEVEL_tb/ZC}
+# add wave -noreg {/TOP_LEVEL_tb/UI_LT_EQ_PRNG}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_P}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_D_N}
+# add wave -noreg {/TOP_LEVEL_tb/MOTOR_DRIVE}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_ZERO}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_MD}
+# add wave -noreg {/TOP_LEVEL_tb/COUNT_PRNG_LOGIC}
+# add wave -noreg {/TOP_LEVEL_tb/R_NEG}
+# add wave -noreg {/TOP_LEVEL_tb/SCLR_R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/INC_R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/R_POS}
+# add wave -noreg {/TOP_LEVEL_tb/CLOCK_PERIOD}
+# add wave -noreg {/TOP_LEVEL_tb/RUN_TIME}
+# 23 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TOP_LEVEL_TB.v (104): $finish called.
+# KERNEL: Time: 16 us,  Iteration: 0,  Instance: /TOP_LEVEL_tb,  Process: @INITIAL#SYSTEM_RUN_TIME@.
+# KERNEL: stopped at time: 16 us
+endsim
+#  Simulation has been stopped

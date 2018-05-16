@@ -1,0 +1,267 @@
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (17, 1): Undefined port SCLR in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (18, 1): Undefined port LOAD in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (19, 1): Undefined port EN in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (21, 1): Undefined port SYS_CLK in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (22, 1): Undefined port PRN in module PRNG.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (27): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (27): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (27): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (27): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (17, 1): Undefined port SCLR in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (18, 1): Undefined port LOAD in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (19, 1): Undefined port EN in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (22, 1): Undefined port PRN in module PRNG.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (27): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (27): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SYS_CLK2 not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/SEED' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/UI' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/DAC' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/SYS_CLK' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/A_RESET' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/PRNG' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/M_ON_P' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/M_ON_N' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/M_ON' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/ZC' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/UI_LT_EQ_PRNG' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/MOTOR_D_P' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/MOTOR_D_N' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/MOTOR_DRIVE' has already been traced.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: VCP2590 TestBench/TOP_LEVEL_TB.v : (45, 1): Undefined port COUNT_ZERO in module TOP_LEVEL.
+# Warning: VCP2590 TestBench/TOP_LEVEL_TB.v : (46, 1): Undefined port COUNT_MD in module TOP_LEVEL.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (29): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (29): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/SEED' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/UI' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/DAC' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/SYS_CLK' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/A_RESET' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/PRNG' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/M_ON_P' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/M_ON_N' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/M_ON' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/ZC' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/UI_LT_EQ_PRNG' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/MOTOR_D_P' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/MOTOR_D_N' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/MOTOR_DRIVE' has already been traced.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (17, 1): Undefined port SCLR in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (18, 1): Undefined port LOAD in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (19, 1): Undefined port EN in module PRNG.
+# Warning: VCP2590 TestBench/PRNG_TB.v : (22, 1): Undefined port PRN in module PRNG.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (29): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (29): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (30): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (30): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (30): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (30): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: VCP2590 TestBench/TOP_LEVEL_TB.v : (51, 1): Undefined port R_NEG in module TOP_LEVEL.
+# Warning: VCP2590 TestBench/TOP_LEVEL_TB.v : (52, 1): Undefined port R_POS in module TOP_LEVEL.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: VCP2590 TestBench/TOP_LEVEL_TB.v : (51, 1): Undefined port R_NEG in module TOP_LEVEL.
+# Warning: VCP2590 TestBench/TOP_LEVEL_TB.v : (52, 1): Undefined port R_POS in module TOP_LEVEL.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (32): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (32): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (32): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (32): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (32): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (32): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/SEED' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/UI' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/DAC' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/SYS_CLK' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/A_RESET' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/PRNG' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/M_ON_P' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/M_ON_N' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/M_ON' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/ZC' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/UI_LT_EQ_PRNG' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/MOTOR_D_P' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/MOTOR_D_N' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/MOTOR_DRIVE' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/COUNT_ZERO' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/COUNT_MD' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/COUNT_PRNG_LOGIC' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/R_NEG' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/SCLR_R_POS' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/INC_R_POS' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/R_POS' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/CLOCK_PERIOD' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/TOP_LEVEL_tb/RUN_TIME' has already been traced.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/SEED" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/UI" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/DAC" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/SYS_CLK" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/A_RESET" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/PRNG" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/M_ON_P" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/M_ON_N" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/M_ON" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/ZC" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/UI_LT_EQ_PRNG" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/MOTOR_D_P" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/MOTOR_D_N" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/MOTOR_DRIVE" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/COUNT_ZERO" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/COUNT_MD" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/COUNT_PRNG_LOGIC" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/R_NEG" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/SCLR_R_POS" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/INC_R_POS" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/R_POS" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/TOP_LEVEL_tb/CLOCK_PERIOD" does not have read access. Use switch +access +r for this region.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SEED not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/UI not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/DAC not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SYS_CLK not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/A_RESET not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/PRNG not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/M_ON_P not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/M_ON_N not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/M_ON not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/ZC not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/UI_LT_EQ_PRNG not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/MOTOR_D_P not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/MOTOR_D_N not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/MOTOR_DRIVE not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/COUNT_ZERO not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/COUNT_MD not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/COUNT_PRNG_LOGIC not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/R_NEG not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SCLR_R_POS not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/INC_R_POS not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/R_POS not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/CLOCK_PERIOD not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SEED not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/UI not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/DAC not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SYS_CLK not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/A_RESET not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/PRNG not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/M_ON_P not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/M_ON_N not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/M_ON not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/ZC not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/UI_LT_EQ_PRNG not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/MOTOR_D_P not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/MOTOR_D_N not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/MOTOR_DRIVE not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/COUNT_ZERO not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/COUNT_MD not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/COUNT_PRNG_LOGIC not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/R_NEG not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SCLR_R_POS not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/INC_R_POS not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/R_POS not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/CLOCK_PERIOD not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SEED not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/UI not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/DAC not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SYS_CLK not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/A_RESET not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/PRNG not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/M_ON_P not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/M_ON_N not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/M_ON not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/ZC not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/UI_LT_EQ_PRNG not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/MOTOR_D_P not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/MOTOR_D_N not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/MOTOR_DRIVE not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/COUNT_ZERO not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/COUNT_MD not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/COUNT_PRNG_LOGIC not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/R_NEG not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/SCLR_R_POS not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/INC_R_POS not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/R_POS not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /TOP_LEVEL_tb/CLOCK_PERIOD not found in C:/Users/blueb/OneDrive/STUDY/DSF_HOME/LAB10/AC_CON/src/wave.asdb.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "SEED" (4) on instance "/TOP_LEVEL_tb/UUT"
+# ELAB2: Warning: ELAB2_0051 TOP_LEVEL_TB.v (34): Length of connection (10) does not match the length of port "UI" (4) on instance "/TOP_LEVEL_tb/UUT"
